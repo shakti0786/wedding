@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var cp = require('child_process');
+var moment = require('moment');
 var sass = require('gulp-sass');
 
 (function() {
@@ -68,7 +69,7 @@ var sass = require('gulp-sass');
      */
     function commit() {
       return new Promise((resolve, reject) => {
-        var ts = Date.now();
+        var ts = moment().format('YYYY-MM-DD H:mm:ss');
         var ps = cp.spawn('git', ['commit', '-m', ts]);
 
         ps.stdout.on('data', function(data) { console.log(data.toString()); });
