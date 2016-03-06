@@ -32,6 +32,7 @@ var sass = require('gulp-sass');
   gulp.task('deploy', ['build'], function() {
     addAll()
       .then(commit)
+      .then(push)
       .then(function() {
         console.log('Done');
       })
