@@ -1,17 +1,13 @@
 /* -----------------------------------------------------------------------------
 
-  Elements - Root
+  Objects - Main
 
 ----------------------------------------------------------------------------- */
 
-html {
-  font-size: 10px;
-}
-
-body {
+.o-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100vw;
   height: 100vh;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
 }

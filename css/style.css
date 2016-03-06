@@ -414,6 +414,19 @@ html {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* -----------------------------------------------------------------------------
+
+  Objects - Main
+
+----------------------------------------------------------------------------- */
+.o-main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -427,7 +440,4 @@ body {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
 }
