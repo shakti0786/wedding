@@ -4,7 +4,8 @@
   "description": "Wedding website for SAYSM",
   "scripts": {
     "build": "gulp build",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "serve": "gulp serve"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",

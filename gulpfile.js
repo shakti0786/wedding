@@ -24,7 +24,7 @@ var sass = require('gulp-sass');
       server: './'
     });
 
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['styles']);
     gulp.watch('./*.html').on('change', browserSync.reload);
   });
 

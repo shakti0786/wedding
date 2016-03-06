@@ -1,15 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+// Vendor
+@import "vendor.normalize";
 
-html {
-  font-size: 10px;
-}
+// Generic
+@import "generic.boxsizing";
 
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-}
+// Elements
+@import "elements.root";
