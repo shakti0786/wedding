@@ -414,11 +414,79 @@ html {
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
+  color: #555;
+  background-color: #fff;
+  font-family: 'Droid Serif', Georgia, serif;
+  font-size: 1.4rem;
   font-weight: 300;
+  line-height: 1.8;
+}
+
+@media all and (min-width: 480px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+
+  Elements - Headings
+
+----------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-weight: 700;
+}
+
+h3 {
+  color: #333;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* -----------------------------------------------------------------------------
+
+  Elements - Text
+
+----------------------------------------------------------------------------- */
+a {
+  color: #ff0033;
+  text-decoration: none;
+}
+
+/* -----------------------------------------------------------------------------
+
+  Objects - Container
+
+----------------------------------------------------------------------------- */
+.o-container {
+  margin: 0 auto;
+  padding: 0 4rem;
+  max-width: 72rem;
+}
+
+/* -----------------------------------------------------------------------------
+
+  Objects - Header
+
+----------------------------------------------------------------------------- */
+.o-header {
+  padding: 4rem 0;
+  border-bottom: solid 1px #eee;
+}
+
+.o-header__logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  height: auto;
 }
 
 /* -----------------------------------------------------------------------------
@@ -427,17 +495,42 @@ body {
 
 ----------------------------------------------------------------------------- */
 .o-main {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-  height: 100vh;
+  padding: 2rem 0;
+}
+
+/* -----------------------------------------------------------------------------
+
+  Objects - Footer
+
+----------------------------------------------------------------------------- */
+.o-footer {
+  padding: 4rem 0;
+  text-align: center;
+  border-top: solid 1px #eee;
+}
+
+/* -----------------------------------------------------------------------------
+
+  Components - List
+
+----------------------------------------------------------------------------- */
+.c-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.c-list li {
+  display: inline-block;
+}
+
+.c-list li::after {
+  display: inline-block;
+  margin: 0 0.4rem 0 0.8rem;
+  content: "\2022";
+}
+
+.c-list li:last-child::after {
+  display: none;
 }
