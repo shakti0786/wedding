@@ -1,10 +1,13 @@
 /* -----------------------------------------------------------------------------
 
-  Elements - Text
+  Elements - Containers
 
 ----------------------------------------------------------------------------- */
 
-a {
-  color: #FF00F3;
-  text-decoration: none;
+section {
+  margin-bottom: 6rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
